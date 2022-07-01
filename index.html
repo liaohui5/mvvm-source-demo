@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="no-referrer" />
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <div id="app">
+      <div>
+        <p>msg: {{msg}}</p>
+        <input type="text" v-model="msg" />
+      </div>
+      <div>你好, {{name}}, 今天是: {{time.year}}年{{time.month}}月{{time.date}}日</div>
+      <div>没有实现 v-for, 所以就不展示了, 点击按钮到Console中查看效果</div>
+      <button id="btn" @click="changeData">修改数据</button>
+    </div>
+    <!-- javascript -->
+    <!-- <script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/vue/2.6.14/vue.js" type="application/javascript"></script> -->
+    <script
+      src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/vue/3.2.31/vue.global.min.js"
+      type="application/javascript"
+    ></script>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
